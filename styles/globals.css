@@ -1,0 +1,116 @@
+@import "tailwindcss";
+
+@theme {
+  /* Colors */
+  --color-base-primary: #333333;
+  --color-base-black: #000000;
+  --color-base-white: #FFFFFF;
+  --color-base-input: #E5E7EB;
+  --color-primary-foreground: #ffffff;
+  --color-border-neutral-300: #E5E7EB;
+  --color-base-border: #E5E7EB;
+  --color-muted-foreground: #6B7280;
+  --color-skeleton-base: #E5E7EB;
+  --color-skeleton-highlight: #f5f5f5;
+  --color-badge-blue-950: #172554;
+  --color-badge-blue-200: #BFDBFE;
+  --color-tw-blue-700: #1D4ED8;
+  --color-dot-green-500: #22C55E;
+
+  /* Letter spacings */
+  --tracking-xl: -1.5px;
+  --tracking-responsive-h1: clamp(-1.5px, -0.6vw, -0.9px);
+
+  /* Max widths */
+  --max-width-md: 448px;
+  --max-width-7xl: 1280px;
+
+  /* Font sizes */
+  --text-xs: 12px;
+  --text-sm: 14px;
+  --text-lg: 18px;
+  --text-responsive-h1: clamp(36px, 4vw + 1rem, 60px);
+  --text-responsive-h2: clamp(30px, 3vw + 1rem, 48px);
+  --text-responsive-h3: clamp(24px, 2vw + 1rem, 36px);
+  --text-responsive-h4: clamp(18px, 2vw + 1rem, 24px);
+  --text-responsive-h5: clamp(16px, 2vw + 1rem, 20px);
+  --text-responsive-h6: clamp(14px, 2vw + 1rem, 18px);
+
+  /* Paddings/Gaps */
+  --spacing-0-5: 2px;
+  --spacing-1: 4px;
+  --spacing-1-5: 6px;
+  --spacing-2: 8px;
+  --spacing-3: 12px;
+  --spacing-4: 16px;
+  --spacing-6: 24px;
+  --spacing-8: 32px;
+  --spacing-12: 48px;
+  --spacing-16: 64px;
+  --spacing-section: 96px;
+  --spacing-section-title-gap-lg: 20px;
+  --spacing-section-title-gap-xl: 24px;
+
+  /* Line-heights */
+  --spacing-lh-xs: 16px;
+  --spacing-lh-sm: 20px;
+  --spacing-lh-lg: 28px;
+  --spacing-lh-xl: 60px;
+  --spacing-lh-responsive-h1: clamp(40px, 3vw + 1.75rem, 60px);
+
+  /* Border radiuses */
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 16px;
+  --radius-xl: 14px;
+
+  /* Gradients */
+  --card-highlighted-linear:
+    linear-gradient(180deg, #008CFF 0%, #3605FB 100%);
+
+  /* Shadows */
+  --shadow-xs:
+    0px 1px 2px 0px rgba(0, 0, 0, 0.05);
+
+  /* Animations */
+  --animate-fadeInUp: fadeInUp 0.5s ease backwards;
+  --animate-shimmer: shimmer 1.25s linear infinite;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+@utility skeleton {
+  background-image: linear-gradient(90deg,
+      var(--color-base-input) 25%,
+      #f5f5f5 37%,
+      var(--color-base-input) 63%);
+  background-size: 200% 100%;
+  animation: shimmer 1.25s linear infinite;
+  border-radius: 0.375rem;
+}
