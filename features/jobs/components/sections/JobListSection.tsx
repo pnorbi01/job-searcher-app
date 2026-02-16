@@ -65,7 +65,7 @@ export default function JobList() {
                 })}
             </section>
 
-            <GradientDecoration className="bottom-0" />
+            {jobs.length >= 8 && <GradientDecoration className="bottom-0" />}
         </div>
     );
 }
