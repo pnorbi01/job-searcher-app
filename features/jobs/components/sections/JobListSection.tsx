@@ -45,7 +45,7 @@ export default function JobList() {
     }
 
     return (
-        <div className="relative w-full">
+        <div className="relative w-full overflow-hidden">
             {jobs.length >= 8 && <GradientDecoration className="md:hidden top-0" />}
 
             <section className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6 md:gap-4 pt-6 lg:pt-3 pb-16 lg:pb-section relative z-20 max-w-7xl mx-auto px-4 md:px-6">
