@@ -63,7 +63,7 @@ export default function FilterBar() {
                     <div className="relative w-full md:w-[228px] min-w-[228px]">
                         <select
                             id="filter-geo"
-                            className="w-full cursor-pointer rounded-md border border-base-input bg-base-white py-2 px-4 shadow-xs tracking-[0] leading-lh-sm text-sm text-base-black font-medium appearance-none focus:outline-none focus:ring-2 focus:ring-base-input"
+                            className="w-full cursor-pointer rounded-md border border-base-input bg-base-white transition-all duration-700 hover:bg-base-input py-2 px-4 shadow-xs tracking-[0] leading-lh-sm text-sm text-base-black font-medium appearance-none focus:outline-none focus:ring-2 focus:ring-base-input"
                             value={currentGeo}
                             onChange={handleGeoChange}
                         >
@@ -101,7 +101,7 @@ export default function FilterBar() {
                     <div className="relative w-full md:w-[228px] min-w-[228px]">
                         <select
                             id="filter-industry"
-                            className="w-full cursor-pointer rounded-md border border-base-input bg-base-white py-2 px-4 shadow-xs tracking-[0] leading-lh-sm text-sm text-base-black font-medium appearance-none focus:outline-none focus:ring-2 focus:ring-base-input"
+                            className="w-full cursor-pointer rounded-md border border-base-input bg-base-white transition-all duration-700 hover:bg-base-input py-2 px-4 shadow-xs tracking-[0] leading-lh-sm text-sm text-base-black font-medium appearance-none focus:outline-none focus:ring-2 focus:ring-base-input"
                             value={currentIndustry}
                             onChange={handleIndustryChange}
                         >

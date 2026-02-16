@@ -10,7 +10,7 @@ export default function LinkButtonDefault({
             target={target}
             rel={rel}
             aria-label={ariaLabel}
-            className="flex flex-row justify-center items-center gap-2 py-2 px-4 rounded-md h-[36px] min-h-[36px] bg-base-primary"
+            className="flex flex-row justify-center items-center gap-2 py-2 px-4 rounded-md h-[36px] min-h-[36px] bg-base-primary transition-all duration-700 hover:bg-base-primary-hover"
         >
             {showIcon && icon && iconAlignment === "left" && (
                 <span className="hidden lg:inline-flex">{icon}</span>

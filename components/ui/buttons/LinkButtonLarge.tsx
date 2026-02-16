@@ -10,7 +10,7 @@ export default function LinkButtonLarge({
             target={target}
             rel={rel}
             aria-label={ariaLabel}
-            className={`flex flex-row justify-center items-center gap-2 py-2 px-6 rounded-md h-[40px] min-h-[40px] w-full md:w-fit ${isHighlighted ? "bg-blue-50" : "bg-base-primary"}`}
+            className={`flex flex-row justify-center items-center gap-2 py-2 px-6 rounded-md h-[40px] min-h-[40px] w-full md:w-fit transition-all duration-700 ${isHighlighted ? "bg-blue-50 hover:bg-blue-200" : "bg-base-primary hover:bg-base-primary-hover"}`}
         >
             {showIcon && icon && iconAlignment === "left" && icon}
             <span className={`font-medium tracking-[0] text-sm leading-lh-sm align-middle ${isHighlighted ? "text-badge-blue-950" : "text-primary-foreground"}`}>{title}</span>

@@ -6,7 +6,7 @@ export default function PrimaryButton({ title, onClick, showIcon, icon, iconAlig
 
     return (
         <button
-            className="flex flex-row justify-center items-center gap-2 py-2 px-4 rounded-md h-[36px] min-h-[36px] bg-base-primary cursor-pointer"
+            className="flex flex-row justify-center items-center gap-2 py-2 px-4 rounded-md h-[36px] min-h-[36px] bg-base-primary cursor-pointer transition-all duration-700 hover:bg-base-primary-hover"
             onClick={onClick}
             type="button"
         >
